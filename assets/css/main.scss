@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'mixins';
 
+$azul: #0071eb;
 $vermelho: #E50914;
 $preto-dark: #000000;
 $cinza-claro: #8C8C8C;
@@ -40,7 +41,11 @@ body {
 
   @include media(600px) {
     max-width: 100%;
-    padding: 30px 35px 30px 35px;
+    padding: 20px 25px 30px 25px;
+  }
+
+  @include media(375px) {
+    padding: 15px 15px 30px 15px;
   }
   
   h1 {
@@ -49,16 +54,54 @@ body {
     margin-bottom: 30px;
   }
 
+  .facebook {
+    display: block;
+    font-size: 14px;
+    color: $cinza-claro;
+    margin-bottom: 15px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .assinar {
+    color: $cinza-claro;
+    margin-bottom: 15px;
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .saiba-mais {
+    font-size: 13px;
+    color: $cinza-claro;
+    margin-bottom: 100px;
+
+    a {
+      color: $azul;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .login-form {
     input {
       width: 100%;
-      padding: 16px;
+      padding: 17px;
       color: white;
       border-radius: 5px;
       background-color: $cinza-escuro;
 
       &::placeholder {
-        font-size: 16px;
+        font-size: 15px;
         color: $cinza-claro;
       }
 
@@ -74,7 +117,7 @@ body {
     button {
       display: block;
       width: 100%;
-      padding: 16px;
+      padding: 17px;
       color: white;
       cursor: pointer;
       font-size: 16px;
@@ -85,10 +128,12 @@ body {
     }
   }
 
-  .flex-container {
+  .form-flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    margin-bottom: 50px;
 
     a {
       font-size: 14px;
@@ -97,12 +142,20 @@ body {
       &:hover {
         text-decoration: underline;
       }
+
+      @include media(375px) {
+        font-size: 13px;
+      }
     }
 
     .lembrar-form {
       label {
         font-size: 15px;
         color: $cinza-claro;
+
+        @include media(375px) {
+          font-size: 13px;
+        }
       }
     }
   }
