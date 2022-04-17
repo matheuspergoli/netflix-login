@@ -261,4 +261,8 @@ body {
   font-size: 14px;
   color: #8C8C8C;
 }
+
+.footer section .links a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */

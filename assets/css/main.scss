@@ -210,6 +210,10 @@ body {
       a {
         font-size: 14px;
         color: $cinza-claro;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
