@@ -49,7 +49,7 @@ body {
     margin-bottom: 30px;
   }
 
-  form {
+  .login-form {
     input {
       width: 100%;
       padding: 16px;
@@ -67,7 +67,7 @@ body {
       }
 
       &:nth-of-type(2) {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
     }
 
@@ -80,7 +80,30 @@ body {
       font-size: 16px;
       font-weight: bold;
       border-radius: 5px;
+      margin-bottom: 10px;
       background-color: $vermelho;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      font-size: 14px;
+      color: $cinza-claro;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .lembrar-form {
+      label {
+        font-size: 15px;
+        color: $cinza-claro;
+      }
     }
   }
 }
