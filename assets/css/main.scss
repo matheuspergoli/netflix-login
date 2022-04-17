@@ -168,7 +168,6 @@ body {
 }
 
 .footer {
-  height: 200px;
   padding: 30px 40px;
   background-color: transparentize($preto-dark, 0.30);
 
@@ -200,8 +199,13 @@ body {
 
     .links {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 20px;
+
+      @include media(600px) {
+        justify-content: space-between;
+        gap: 30px;
+      }
 
       a {
         font-size: 14px;

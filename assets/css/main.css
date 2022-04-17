@@ -204,7 +204,6 @@ body {
 }
 
 .footer {
-  height: 200px;
   padding: 30px 40px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -244,11 +243,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer section .links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 30px;
+  }
 }
 
 .footer section .links a {
