@@ -43,9 +43,9 @@ body {
 
 .login-container {
   width: 100%;
-  margin: auto;
   max-width: 450px;
   border-radius: 5px;
+  margin: 0px auto 100px auto;
   padding: 60px 68px 40px 68px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -53,6 +53,7 @@ body {
 @media (max-width: 600px) {
   .login-container {
     max-width: 100%;
+    margin-bottom: 0px;
     padding: 20px 25px 30px 25px;
   }
 }
@@ -73,7 +74,7 @@ body {
   display: block;
   font-size: 14px;
   color: #8C8C8C;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .login-container .facebook:hover {
@@ -170,6 +171,12 @@ body {
   margin-bottom: 50px;
 }
 
+@media (max-width: 600px) {
+  .login-container .form-flex-container {
+    margin-bottom: 20px;
+  }
+}
+
 .login-container .form-flex-container a {
   font-size: 14px;
   color: #8C8C8C;
@@ -194,5 +201,58 @@ body {
   .login-container .form-flex-container .lembrar-form label {
     font-size: 13px;
   }
+}
+
+.footer {
+  height: 200px;
+  padding: 30px 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    border-top: 1px solid #8C8C8C;
+  }
+}
+
+@media (max-width: 475px) {
+  .footer {
+    padding: 25px 15px;
+  }
+}
+
+.footer section {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.footer section p {
+  margin-bottom: 30px;
+  color: #8C8C8C;
+}
+
+.footer section p a {
+  color: #8C8C8C;
+}
+
+.footer section p a:hover {
+  text-decoration: underline;
+}
+
+.footer section .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer section .links a {
+  font-size: 14px;
+  color: #8C8C8C;
 }
 /*# sourceMappingURL=main.css.map */

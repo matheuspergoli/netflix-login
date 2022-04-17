@@ -33,14 +33,15 @@ body {
 
 .login-container {
   width: 100%;
-  margin: auto;
   max-width: 450px;
   border-radius: 5px;
+  margin: 0px auto 100px auto;
   padding: 60px 68px 40px 68px;
   background-color: transparentize($preto-dark, 0.30);
 
   @include media(600px) {
     max-width: 100%;
+    margin-bottom: 0px;
     padding: 20px 25px 30px 25px;
   }
 
@@ -58,7 +59,7 @@ body {
     display: block;
     font-size: 14px;
     color: $cinza-claro;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     
     &:hover {
       text-decoration: underline;
@@ -136,6 +137,10 @@ body {
     
     margin-bottom: 50px;
 
+    @include media(600px) {
+      margin-bottom: 20px;
+    }
+
     a {
       font-size: 14px;
       color: $cinza-claro;
@@ -157,6 +162,50 @@ body {
         @include media(375px) {
           font-size: 13px;
         }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 200px;
+  padding: 30px 40px;
+  background-color: transparentize($preto-dark, 0.30);
+
+  @include media(600px) {
+    border-top: 1px solid $cinza-claro;
+  }
+
+  @include media(475px) {
+    padding: 25px 15px;
+  }
+
+  section {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+
+    p {
+      margin-bottom: 30px;
+      color: $cinza-claro;
+
+      a {
+        color: $cinza-claro;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      a {
+        font-size: 14px;
+        color: $cinza-claro;
       }
     }
   }
