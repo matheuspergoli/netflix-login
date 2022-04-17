@@ -101,6 +101,7 @@ body {
 
 .login-container .saiba-mais a {
   color: #0071eb;
+  white-space: nowrap;
 }
 
 .login-container .saiba-mais a:hover {
